@@ -1,0 +1,73 @@
+/* Color Palette: #393E46, #00ADB5, #AAD8D3, #EEEEEE */
+/* Fonts:
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Cabin', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+/* ===== General Styles ===== */
+body {
+    background-color: #393E46;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* ===== Title Section ===== */
+.coin {
+    padding: 0 1.5rem;
+}
+.titleText {
+    color: #00ADB5;
+    font-family: 'Satisfy', cursive;
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 10rem 0 1rem;
+}
+
+.titleSub {
+    color: #AAD8D3;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+}
+
+.logo {
+    padding: 0 1rem;
+}
+
+.navbar {
+    background-color: #393E46;
+}
+
+.navbar-item {
+    padding: 0 1rem;
+}
+
+.pixelBg {
+    bottom: 30rem;
+    position: absolute;
+    width: 100%;
+}
+
+.pixelFront {
+    position: relative;
+    margin: auto;
+}
+
+
+/* ===== About Section ===== */
+#about {
+    background-color: #EEEEEE;
+}
+
+/* ===== Skills Section ===== */
+#skills {
+    background-color:#AAD8D3;
+}
+
+#work {
+    background-color: #00ADB5;
+}
