@@ -10,6 +10,12 @@ body {
     background-color: #393E46;
     font-family: 'Cabin', sans-serif;
     text-align: center;
+    overflow-x: hidden;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
 
 p {
@@ -58,6 +64,15 @@ p {
 
 .navbar-item {
     padding: 0 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: #addaff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #2a4081;
 }
 
 .pixelBg {
@@ -127,6 +142,7 @@ p {
     color:#addaff;
     font-weight: bold;
     text-align: left;
+    font-family: 'Satisfy', cursive;
 }
 
 .skillText {
@@ -155,7 +171,79 @@ p {
 }
 
 .f-icon {
-    padding: 2rem;
+    margin: 1rem;
+    padding: 1rem;
     font-size: 3rem;
     color: #addaff;
+}
+
+/* ===== Animations ===== */
+.welcome-fades {
+    opacity: 0;
+    animation: fadeSeq 500ms ease-in both;
+}
+
+@keyframes fadeSeq {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-second {
+    animation-delay: 1500ms;
+}
+
+.fade-third {
+    animation-delay: 3000ms;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.from-left {
+    grid-column: 2/3;
+    transform: translateX(-100%);
+}
+
+.from-right {
+    grid-column: 3/4;
+    transform: translateX(100%);
+}
+
+.from-left,
+.from-right {
+    transition: opacity 700ms ease-in, transform 700ms ease-in;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+body .animateLink {
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #addaff 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    color: #addaff;
+    line-height: 1.15em;
+    text-decoration: none;
+    transition: background-position 0.5s ease-out;
+    border-radius: 20rem;
+}
+
+body .animateLink:hover {
+    background-position: -99.99% 0;
+    text-decoration: none;
+    color: #2a4081;
 }

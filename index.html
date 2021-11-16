@@ -26,7 +26,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark welcome-fades fade-third">
             <a class="navbar-brand" href="#title"><img class="logo" src="images/Lemon Icon-1.png"></a>
             <a href="#title"><p class="logoName">Ryan Lemon</p></a>
 
@@ -39,16 +39,16 @@
             <div class="collapse navbar-collapse" id="collapseContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="navbar-item">
-                        <a class="nav-link" href="">Skills</a>
+                        <a class="nav-link animateLink" href="">Skills</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="nav-link" href="">Work Experience</a>
+                        <a class="nav-link animateLink" href="">Work Experience</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="nav-link" href="">Projects</a>
+                        <a class="nav-link animateLink" href="">Projects</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="nav-link" href="">Contact</a>
+                        <a class="nav-link animateLink" href="">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -57,42 +57,42 @@
         <section id="title">
 
             <!-- Background -->
-            <div class="pixelBg">
+            <div class="pixelBg welcome-fades fade-second">
                 <img id="cloudsBg" src="images/cloudsBg.gif">
             </div>      
             
             <div class="titleSpace">
                 <!-- Title Text -->
-                <h1 class="titleText">Hi friend, I'm Ryan!</h1>
-                <p class="titleSub">Software Engineer | Musician | Cat Dad </p>
-                <img class="pixelMe" src="https://piskel-imgstore-b.appspot.com/img/c4efcfd1-db7b-11eb-b8d6-7dcc19dc54a1.gif">
+                <h1 class="titleText welcome-fades">Hi friend, I'm Ryan!</h1>
+                <p class="titleSub welcome-fades">Software Engineer | Musician | Cat Dad </p>
+                <img class="pixelMe welcome-fades fade-second" src="https://piskel-imgstore-b.appspot.com/img/c4efcfd1-db7b-11eb-b8d6-7dcc19dc54a1.gif">
             </div>
 
         </section>
 
-        <section id="about">
-            <img class="profileImg" src="images/profile.png">
-            <div class="profileTextContainer">
+        <section id="about" class="welcome-fades fade-third">
+            <img class="profileImg fade-in" src="images/profile.png">
+            <div class="profileTextContainer fade-in">
                 <p class="profileGreeting">Nice to meet you!</p>
                 <p class="profileText">My name is Ryan Lemon, a UC San Diego alumni with a B.S. in Mathematics - Computer Science.</p> 
-                <p class="profileText">I was previously the Instructor Operations (Training) Lead at <a class="link" href="https://junilearning.com/">Juni Learning</a>, 
-                    and a Front-End Developer for UCSD's <a class="link" href="https://ucsdcki.org/">Circle Kiwanis</a>.</p>
+                <p class="profileText">I was previously the Instructor Operations (Training) Lead at<a class="link animateLink" href="https://junilearning.com/"> Juni Learning </a>, 
+                    and a Front-End Developer for UCSD's<a class="link animateLink" href="https://ucsdcki.org/"> Circle Kiwanis </a>.</p>
             </div>   
         </section>
 
         <section id="skills">
             <div class="container">
-                <div class="row skillRow">
+                <div class="row skillRow slide-in from-right">
                     <div class="col-4">
                         <img id="CS" class="coin" src="images/CS Coin.gif">
                     </div>
-                    <div class="col-8 my-auto">
+                    <div class="col-8">
                         <h1 class="skillTitle">Web and Full-Stack Developer</h1>
                         <p class="skillText">I have built programs such as web applications, mobile apps, and simulators throughout my 6 years of programming. Some languages I have used are JavaScript, Python, C++, and Java.</p>
                         <h5 class="redirectText">Read more about my Projects here.</h5>
                     </div>
                 </div>
-                <div class="row skillRow">
+                <div class="row skillRow slide-in from-left">
                     <div class="col-8 my-auto">
                         <h1 class="skillTitle">Business Operations Specialist</h1>
                         <p class="skillText">As an acting operations manager and supervisor at a start up company, I founded various processes used to this day, and learned to quickly identify and take action on pressure points in the company.</p>
@@ -102,7 +102,7 @@
                         <img id="BizOps" class="coin" src="images/BIZOPS Coin.gif">
                     </div>
                 </div>
-                <div class="row skillRow">
+                <div class="row skillRow slide-in from-right">
                     <div class="col-4">
                         <img id="TEACH" class="coin" src="images/TEACH Coin.gif">
                     </div>
@@ -117,10 +117,10 @@
         <script src="script.js"></script>
     </body>
     <footer id="footer">
-        <a href="mailto:ryanalemon@gmail.com"><i class="fas fa-envelope f-icon"></i></a>
-        <a href="https://www.linkedin.com/in/ryan-lemon-8499b4155/"><i class="fab fa-linkedin f-icon"></i></a>
-        <a href="https://www.instagram.com/lemonhead96/"><i class="fab fa-instagram f-icon"></i></a>
-        <a href="https://soundcloud.com/rlemon"><i class="fab fa-soundcloud f-icon"></i></a>
+        <a href="mailto:ryanalemon@gmail.com"><i class="fas fa-envelope f-icon animateLink"></i></a>
+        <a href="https://www.linkedin.com/in/ryan-lemon-8499b4155/"><i class="fab fa-linkedin f-icon animateLink"></i></a>
+        <a href="https://www.instagram.com/lemonhead96/"><i class="fab fa-instagram f-icon animateLink"></i></a>
+        <a href="https://soundcloud.com/rlemon"><i class="fab fa-soundcloud f-icon animateLink"></i></a>
         <p class="copyright">© Copyright 2021 Ryan Lemon</p>
     </footer>
 </html>
