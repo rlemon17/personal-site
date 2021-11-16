@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -22,92 +22,105 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+        <!-- JQuery Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#title"><img class="logo" src="images/Lemon Icon-1.png"></a>
+            <a href="#title"><p class="logoName">Ryan Lemon</p></a>
+
+            <!-- Collapsable Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseContent" aria-controls="collapseContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Items -->
+            <div class="collapse navbar-collapse" id="collapseContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a class="nav-link" href="">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="">Work Experience</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="">Projects</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <section id="title">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#title"><img class="logo" src="images/Lemon Icon-1.png"></a>
-
-                <!-- Collapsable Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseContent" aria-controls="collapseContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Nav Items -->
-                <div class="collapse navbar-collapse" id="collapseContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">Contact</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">Skills</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">Work Experience</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="">Projects</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- Title Text -->
-            <h1 class="titleText">Hi friend, I'm Ryan!</h1>
-            <p class="titleSub">Software Engineer | Musician | Cat Dad </p>
 
             <!-- Background -->
-            <div class="row pixelBg">
-                <div class="col-lg-6">
-                    <img src="images/BG Hills-1.png">
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/BG Hills-2.png">        
-                </div>
+            <div class="pixelBg">
+                <img id="cloudsBg" src="images/cloudsBg.gif">
+            </div>      
+            
+            <div class="titleSpace">
+                <!-- Title Text -->
+                <h1 class="titleText">Hi friend, I'm Ryan!</h1>
+                <p class="titleSub">Software Engineer | Musician | Cat Dad </p>
+                <img class="pixelMe" src="https://piskel-imgstore-b.appspot.com/img/c4efcfd1-db7b-11eb-b8d6-7dcc19dc54a1.gif">
             </div>
-
-            <!-- Pixel Images -->
-            <div class="row pixelFront">
-                <div class="col-lg-3">
-                    <img class="coin" src="images/CS Coin.gif">
-                    <img class="coin" src="images/MA Coin.gif">
-                    <img class="coin" src="images/LEAD Coin.gif">
-                </div>
-                <div class="col-lg-6">
-                    <img class="pixelMe" src="https://piskel-imgstore-b.appspot.com/img/c4efcfd1-db7b-11eb-b8d6-7dcc19dc54a1.gif">   
-                </div>
-                <div class="col-lg-3">
-                    <img class="coin" src="images/MUS Coin.gif">
-                    <img class="coin" src="images/BIZOPS Coin.gif">
-                    <img class="coin" src="images/TEACH Coin.gif">
-                </div>
-            </div>                
 
         </section>
 
         <section id="about">
-            <p>tba</p>
+            <img class="profileImg" src="images/profile.png">
+            <div class="profileTextContainer">
+                <p class="profileGreeting">Nice to meet you!</p>
+                <p class="profileText">My name is Ryan Lemon, a UC San Diego alumni with a B.S. in Mathematics - Computer Science.</p> 
+                <p class="profileText">I was previously the Instructor Operations (Training) Lead at <a class="link" href="https://junilearning.com/">Juni Learning</a>, 
+                    and a Front-End Developer for UCSD's <a class="link" href="https://ucsdcki.org/">Circle Kiwanis</a>.</p>
+            </div>   
         </section>
 
         <section id="skills">
-            <p>tba</p>
-        </section>
-
-        <section id="work">
-            <p>tba</p>
-        </section>
-
-        <section id="projects">
-            <p>tba</p>
-        </section>
-        
+            <div class="container">
+                <div class="row skillRow">
+                    <div class="col-4">
+                        <img id="CS" class="coin" src="images/CS Coin.gif">
+                    </div>
+                    <div class="col-8 my-auto">
+                        <h1 class="skillTitle">Web and Full-Stack Developer</h1>
+                        <p class="skillText">I have built programs such as web applications, mobile apps, and simulators throughout my 6 years of programming. Some languages I have used are JavaScript, Python, C++, and Java.</p>
+                        <h5 class="redirectText">Read more about my Projects here.</h5>
+                    </div>
+                </div>
+                <div class="row skillRow">
+                    <div class="col-8 my-auto">
+                        <h1 class="skillTitle">Business Operations Specialist</h1>
+                        <p class="skillText">As an acting operations manager and supervisor at a start up company, I founded various processes used to this day, and learned to quickly identify and take action on pressure points in the company.</p>
+                        <h5 class="redirectText">Learn more about my previous Work Experience here.</h5>
+                    </div>
+                    <div class="col-4">
+                        <img id="BizOps" class="coin" src="images/BIZOPS Coin.gif">
+                    </div>
+                </div>
+                <div class="row skillRow">
+                    <div class="col-4">
+                        <img id="TEACH" class="coin" src="images/TEACH Coin.gif">
+                    </div>
+                    <div class="col-8 my-auto">
+                        <h1 class="skillTitle">Natural Mentor and Leader</h1>
+                        <p class="skillText">Through my experiences as various club presidents, a full-time teacher, and peer counselor coordinator, I possess excellent interpersonal skills, build rapport quickly, and inspire others through leading by example.</p>
+                        <h5 class="redirectText">Read more about my Skills here.</h5>
+                    </div>
+                </div>
+            </div>
+        </section>    
         <script src="script.js"></script>
     </body>
     <footer id="footer">
-        <i class="fab fa-linkedin f-icon"></i>
-        <i class="fab fa-instagram f-icon"></i>
-        <i class="fas fa-envelope f-icon"></i>
-        <i class="fab fa-soundcloud f-icon"></i>
-        <p>© Copyright 2021 Ryan Lemon</p>
+        <a href="mailto:ryanalemon@gmail.com"><i class="fas fa-envelope f-icon"></i></a>
+        <a href="https://www.linkedin.com/in/ryan-lemon-8499b4155/"><i class="fab fa-linkedin f-icon"></i></a>
+        <a href="https://www.instagram.com/lemonhead96/"><i class="fab fa-instagram f-icon"></i></a>
+        <a href="https://soundcloud.com/rlemon"><i class="fab fa-soundcloud f-icon"></i></a>
+        <p class="copyright">© Copyright 2021 Ryan Lemon</p>
     </footer>
 </html>

@@ -1,4 +1,4 @@
-/* Color Palette: #393E46, #00ADB5, #AAD8D3, #EEEEEE */
+/* Color Palette: #393E46,#2a4081,#3c5dc0,#addaff,#EEEEEE  */
 /* Fonts:
 font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Satisfy', cursive;
@@ -13,15 +13,22 @@ body {
 }
 
 p {
+    color: #EEEEEE;
     margin-bottom: 0;
 }
 
 /* ===== Title Section ===== */
-.coin {
-    padding: 0 1.5rem;
+#title {
+    position: relative;
+    top: 2rem;
 }
+
+.titleSpace {
+    position: relative
+}
+
 .titleText {
-    color: #00ADB5;
+    color: #addaff;
     font-family: 'Satisfy', cursive;
     font-size: 6rem;
     font-weight: bold;
@@ -29,17 +36,24 @@ p {
 }
 
 .titleSub {
-    color: #AAD8D3;
+    color: #3c5bc0;
     font-family: 'Cabin', sans-serif;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .logo {
-    padding: 0 1rem;
+    padding: 0 0 0 1rem;
+}
+
+.logoName {
+    color: #EEEEEE;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.7rem;
 }
 
 .navbar {
-    background-color: #393E46;
+    background-color: #3c5bc0;
 }
 
 .navbar-item {
@@ -47,27 +61,101 @@ p {
 }
 
 .pixelBg {
-    bottom: 30rem;
     position: absolute;
     width: 100%;
 }
 
-.pixelFront {
-    position: relative;
-    margin: auto;
+#cloudsBg {
+    width: 100%
 }
-
 
 /* ===== About Section ===== */
 #about {
-    background-color: #EEEEEE;
+    position: relative;
+    background-color: #2a4081;
+    padding: 1rem;
+}
+
+.profileImg {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin: 3rem 2rem 2rem;
+    border: 20px solid #addaff;
+    border-radius: 15rem;
+}
+
+.profileTextContainer {
+    max-width: 40%;
+    margin: auto;
+}
+
+.profileText {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.profileGreeting {
+    color: #addaff;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.link {
+    color: #addaff;
 }
 
 /* ===== Skills Section ===== */
 #skills {
-    background-color:#AAD8D3;
+    position: relative;
+    background-color:#393E46;
+    padding: 2rem;
+}
+
+.coin {
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    cursor: pointer;
+}
+
+.skillTitle {
+    color:#addaff;
+    font-weight: bold;
+    text-align: left;
+}
+
+.skillText {
+    text-align: left;
+}
+
+.skillRow {
+    padding: 1.5rem 2rem;
+}
+
+.redirectText {
+    color: #EEEEEE;
+    margin: 2rem;
+    font-size: 1.3rem;
 }
 
 #work {
-    background-color: #00ADB5;
+    position: relative;
+    background-color: #2a4081;
+}
+
+/* ===== Footer Section ===== */
+#footer {
+    background-color: #2a4081;
+    padding: 2rem;
+}
+
+.f-icon {
+    padding: 2rem;
+    font-size: 3rem;
+    color: #addaff;
 }
