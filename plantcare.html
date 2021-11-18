@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ryan Lemon's Plantcare App</title>
+
+        <!-- Style Sheets-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico">
+
+        <!-- Custom Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Satisfy&family=Source+Sans+Pro&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/1ad4826b40.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+        <!-- JQuery Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="images/Lemon Icon-1.png"></a>
+            <a href="index.html"><p class="logoName">Ryan Lemon</p></a>
+
+            <!-- Collapsable Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseContent" aria-controls="collapseContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Items -->
+            <div class="collapse navbar-collapse" id="collapseContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a class="nav-link animateLink" href="projects.html">Projects</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link animateLink" href="experience.html">Work Experience</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link animateLink" href="skills.html">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link animateLink" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container project-title-container">
+            <div class="row">
+                <div class="col-3">
+                    <img class="titleImg" src="https://raw.githubusercontent.com/rlemon17/plantApp/main/public/Plant.gif">
+                </div>
+                <div class="col-9">
+                    <h1 class="titleText">Plant Care Web Application</h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-bg-white">
+            <div class="container-fluid">
+                <div class="row skillRow fade-in">
+                    <div class="col-4 my-auto project-text-container">
+                        <h1 class="project-text-title">Overview</h1>
+                        <p>Web application to help users keep track of watering/fertilizing their plants by calculating upcoming dates with given information.</p>
+                        <p><strong>Link: </strong><a class="link animateLink" href="https://lemon-plantcare.herokuapp.com/">https://lemon-plantcare.herokuapp.com/</a></p>
+                        <p><strong>Test Username: </strong>sampleUser</p>
+                        <p><strong>Test Password: </strong>samplePassword</p>
+                        <p><strong>Features: </strong>React, HTML, CSS, Bootstrap, JavaScript/Node.js, Express, CRUD and REST API (Axios), MongoDB, Mongoose, Authentication, Password hashing, Cookies</p>
+                    </div>
+                    <div class="col-8 my-auto">
+                        <img class="project-title-photo" src="images/plantAppHome.png">
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-7 my-auto">
+                        <img class="project-photo" src="images/plantAppLogin.png">
+                    </div>
+                    <div class="col-5 my-auto project-text-container">
+                        <h1 class="project-text-title">Authentication and Encryption</h1>
+                        <p>Users are required to register an account before being able to access any features (other than the help page). Attempting to access any unauthorized links prompts the user to log in.</p>
+                        <p>Accounts and passwords are stored in a MongoDB database, and passwords are encrypted through a cryptographic hash function.</p>
+                        <p>Users will stay logged into their accounts unless they log out or delete their browser's cookies.</p>
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-5 my-auto project-text-container">
+                        <h1 class="project-text-title">Unique URL and Account Management</h1>
+                        <p>Other than logging in, users are also able to access their plant database by appending their username to the URL. The application will recognize the parameter and load the user's data (if authenticated).</p>
+                    </div>
+                    <div class="col-7 my-auto">
+                        <img class="project-photo" src="https://raw.githubusercontent.com/rlemon17/plantApp/main/public/photos/url.png">
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-7 my-auto">
+                        <img class="project-photo" src="https://raw.githubusercontent.com/rlemon17/plantApp/main/public/photos/plantEdit.png">
+                    </div>
+                    <div class="col-5 my-auto project-text-container">
+                        <h1 class="project-text-title">Adding, Editing, and Deleting</h1>
+                        <p>Adding or editing a plant presents the same UI, and the application performs the required CRUD operations on the back-end database once the user provides the requested data.</p>
+                        <p>Cancel, Delete, and Undo Delete functionalities are also present.</p>
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-5 my-auto project-text-container">
+                        <h1 class="project-text-title">Interface</h1>
+                        <p>The website provides a clean UI to view the user's plants, displaying watering and fertilizing dates. A plant's background turns green when the watering date has been reached.</p>
+                        <p>All information is stored and retrieved from a MongoDB Database.</p>
+                    </div>
+                    <div class="col-7 my-auto">
+                        <img class="project-photo" src="https://raw.githubusercontent.com/rlemon17/plantApp/main/public/photos/plantHome.png">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <script src="script.js"></script>
+    </body>
+    <footer id="footer">
+        <a href="mailto:ryanalemon@gmail.com"><i class="fas fa-envelope f-icon animateLink"></i></a>
+        <a href="https://www.linkedin.com/in/ryan-lemon-8499b4155/"><i class="fab fa-linkedin f-icon animateLink"></i></a>
+        <a href="https://www.instagram.com/lemonhead96/"><i class="fab fa-instagram f-icon animateLink"></i></a>
+        <a href="https://soundcloud.com/rlemon"><i class="fab fa-soundcloud f-icon animateLink"></i></a>
+        <p class="copyright">© Copyright 2021 Ryan Lemon</p>
+    </footer>
+</html>

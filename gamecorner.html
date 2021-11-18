@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ryan Lemon's Mobile App</title>
+
+        <!-- Style Sheets-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico">
+
+        <!-- Custom Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Satisfy&family=Source+Sans+Pro&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/1ad4826b40.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+        <!-- JQuery Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="images/Lemon Icon-1.png"></a>
+            <a href="index.html"><p class="logoName">Ryan Lemon</p></a>
+
+            <!-- Collapsable Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseContent" aria-controls="collapseContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Items -->
+            <div class="collapse navbar-collapse" id="collapseContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item">
+                        <a class="nav-link animateLink" href="projects.html">Projects</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link animateLink" href="experience.html">Work Experience</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link animateLink" href="skills.html">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link animateLink" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container project-title-container">
+            <div class="row">
+                <div class="col-3">
+                    <img class="titleImg" src="images/zaru.gif">
+                </div>
+                <div class="col-9">
+                    <h1 class="titleText">Video Game Mobile App</h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-bg-white">
+            <div class="container-fluid">
+                <div class="row skillRow fade-in">
+                    <div class="col-4 my-auto project-text-container">
+                        <h1 class="project-text-title">Overview</h1>
+                        <p>A 4-in-1 iOS/Android app containing Tic Tac Toe, Mastermind, Video Poker, and a turn-based Battle Simulator, along with respective AI players - all built from scratch.</p>
+                        <p><strong>Link: </strong><a class="link animateLink" href="https://expo.dev/@rlemon17/lemongamecorner">https://expo.dev/@rlemon17/lemongamecorner</a></p>
+                        <p>Requires the Expo Development App</p>
+                        <p><strong>Features: </strong>React Native, Node.js, Expo, AI Logic, Screen Navigation, Game Development</p>
+                    </div>
+                    <div class="col-8 my-auto">
+                        <img class="project-title-photo" src="images/mobileGamecornerPreview.png">
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-5 my-auto">
+                        <img class="project-photo-vertical" src="images/mobileGamecornerHome.png">
+                    </div>
+                    <div class="col-7 my-auto project-text-container">
+                        <h1 class="project-text-title">Home Page</h1>
+                        <p>The app's home page presents all 4 available games. The info/confirm box at the bottom corresponds with the currently selected button.</p>
+                        <p>Pressing "Play!" brings the user to that game's settings page, where they can set up the number of human/CPU players, difficulty, and any other options specifically for that game.</p>
+                        <p>React Navigation was used to navigate and render all the different available screens in the app.</p>
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-7 my-auto project-text-container">
+                        <h1 class="project-text-title">Tic Tac Toe</h1>
+                        <p><strong>Settings: </strong>1-2 human players, difficulty of AI, whether user is X's or O's</p>
+                        <p>The classic 2-player, three-in-a-row game.</p>
+                        <p>The Easy AI simply chooses a random, open spot. The Hard AI prioritizing winning moves, then stopping any player winning moves.</p>
+                        <p>Players simply tap on the box they wish to play in, and an error message shows if the spot is taken. Scores are kept at the top, and a dialogue box appears each time a round ends, announcing the results.</p>
+                    </div>
+                    <div class="col-5 my-auto">
+                        <img class="project-photo-vertical" src="images/mobileGamecornerTTT.png">
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-5 my-auto">
+                        <img class="project-photo-vertical" src="images/mobileGamecornerMMH.png">
+                    </div>
+                    <div class="col-7 my-auto project-text-container">
+                        <h1 class="project-text-title">Mastermind - Hacker</h1>
+                        <p><strong>Settings: </strong>1-2 human players, whether user is Codemaker or Hacker, if duplicate colors are allowed</p>
+                        <p>As the Hacker, the user must use the Codemaker's hints to guess the correct, 4-colored code. Pressing on a button on the current active row brings up a small menu to choose that button's color.</p>
+                        <p>Edge cases are accounted for, prompting an error message if a Hacker tries to skip their turn or submit an invalid code (ex. leaving a button blank or having duplicate colors if that setting was turned off)</p>
+                        <p>An AI Hacker starts with a random guess, then uses the Codemaker's hints to make a more educated guess, making sure it doesn't repeat itself or make any decisions that conflict previous Codemaker hints. Its guesses are based on the best hint the Codemaker has given them so far.</p>
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-7 my-auto project-text-container">
+                        <h1 class="project-text-title">Mastermind - Codemaker</h1>
+                        <p>As the Codemaker, the user creates the 4 colored code (using a similar interface as the hacker), then rates each of the Hacker's guesses using the smaller interface on the right of each row. Like the Hacker's turns, error checks are put in place if the user tries to input an invalid code.</p>
+                        <p>A Modal pops up upon pressing said interface, asking the user to input the number of dark and light pegs to rate the guess. Error checks are put in place, popping an error if the user tries to submit an incorrect or invalid hint.</p>
+                        <p>The Codemaker may also choose to show the answer, to help determine the hint. The answer is hidden again once the Codemaker completes their turn.</p> 
+                        <p>The Codemaker recieves a point for each row in the round, and this is the only time players can receive points.</p>
+                        <p>Once the Hacker discovers the code or 12 rows are played, the winner is declared and the player is prompted to play again (either switching roles or keeping the same roles).</p>
+                    </div>
+                    <div class="col-5 my-auto">
+                        <img class="project-photo-vertical" src="images/mobileGamecornerMMC.png">
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-5 my-auto">
+                        <img class="project-photo-vertical" src="images/mobileGamecornerVP.png">
+                    </div>
+                    <div class="col-7 my-auto project-text-container">
+                        <h1 class="project-text-title">Video Poker</h1>
+                        <p><strong>Settings: </strong>Dollars per credit (default $0.25), starting money (default $10.00)</p>
+                        <p>Tapping the cards (after the first deal) keeps that card for the second deal, while the rest are shuffled.</p></p>
+                        <p>The card deck is created and analyzed using a numbered array from 0 to 51. Suits are determined through (n mod 4), and Ranks through (n mod 13), where n is 0 to 51.</p>
+                        <p>The app recognizes all poker hands by calling only 3 functions: checking rank sequences, checking suits, and checking duplicate ranks.</p>
+                        <p>Winning hands cause the upper section to highlight the title, and the lower section to display the earnings.</p>
+                        <p>Error checks prevent any invalid bets based on current credits, and certain touchable interfaces are unusable during some game phases (ex. changing the bet after the first 5 cards are dealt).</p>
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-7 my-auto project-text-container">
+                        <h1 class="project-text-title">Battle Simulator - Character Select</h1>
+                        <p><strong>Settings: </strong>Whether each of the 4 players are Human or AI, the character of each player</p>
+                        <p>This is a 2v2 turn-based battle game (similar to Pokemon and Paper Mario) revolved around moves that cost mana/energy, and an ultimate move that can only be used below 40% HP. <strong>It features character sprites/animations and move animations created by me!</strong></p>
+                        <p>Tapping on a character card displays its sprite, stats (where bar lengths are relative to other character's stats), and moves.</p>
+                        <p>I am still adding new characters to the game, while balancing current characters as I get feedback from testers.</p>
+                    </div>
+                    <div class="col-5 my-auto">
+                        <img class="project-photo-vertical" src="images/mobileGamecornerBS.png">
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-5 my-auto">
+                        <img class="project-photo-vertical" src="images/mobileGamecornerBS3.png">
+                    </div>
+                    <div class="col-7 my-auto project-text-container">
+                        <h1 class="project-text-title">Battle Simulator - Move Selection</h1>
+                        <p>Each player chooses their move, then the target(s) for the turn using the bottom interface.</p>
+                        <p>Moves deal damage, heal, apply a status effect (either positive or negative), or a mixture of the three. Moves are programmed individually under one main function and have unique animations.</p>
+                        <p>Impossible choices (ex. not enough mana for a move) and irrational moves (ex. healing an enemy) are greyed out and unselectable.</p>
+                        <p>Each character has it's own unique AI due to their different playstyles and moves. The AIs are programmed to make strategic and informed decisions, rather than just randomly picking an available move and target.</p>
+                    </div>
+                </div>
+
+                <div class="row skillRow fade-in">
+                    <div class="col-7 my-auto project-text-container">
+                        <h1 class="project-text-title">Battle Simulator - Battle Scene</h1>
+                        <p>Attacking order is based on character's speed stats. Order is randomized every turn for those with equal speeds.</p>
+                        <p>Dealing or healing damage prompts a number to pop up by the affected character.</p>
+                        <p>Status effects last varying number of turns and include altering stats, damage over time, or being unable to attack. If a status effect exists on a character, they are displayed below their stat bubble.</p>
+                        <p>Defeated characters are no longer animated, greyed out, and untargetble.</p>
+                        <p>The game continues until one side wins!</p>
+                    </div>
+                    <div class="col-5 my-auto">
+                        <img class="project-photo-vertical" src="images/mobileGamecornerBS2.png">
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+        <script src="script.js"></script>
+    </body>
+    <footer id="footer">
+        <a href="mailto:ryanalemon@gmail.com"><i class="fas fa-envelope f-icon animateLink"></i></a>
+        <a href="https://www.linkedin.com/in/ryan-lemon-8499b4155/"><i class="fab fa-linkedin f-icon animateLink"></i></a>
+        <a href="https://www.instagram.com/lemonhead96/"><i class="fab fa-instagram f-icon animateLink"></i></a>
+        <a href="https://soundcloud.com/rlemon"><i class="fab fa-soundcloud f-icon animateLink"></i></a>
+        <p class="copyright">© Copyright 2021 Ryan Lemon</p>
+    </footer>
+</html>
