@@ -60,6 +60,7 @@ p {
 
 .navbar {
     background-color: #3c5bc0;
+    box-shadow: 0rem 0rem 1rem 0.5rem rgba(14, 14, 14, 0.45);
 }
 
 .navbar-item {
@@ -87,13 +88,15 @@ p {
 /* ===== About Section ===== */
 #about {
     position: relative;
+    z-index: 1;
     background-color: #2a4081;
     padding: 1rem;
+    box-shadow: 0rem 0rem 1rem 0.5rem rgba(14, 14, 14, 0.45);
 }
 
 .profileImg {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
     width: auto;
     height: auto;
     margin: 3rem 2rem 2rem;
@@ -101,8 +104,17 @@ p {
     border-radius: 15rem;
 }
 
+.subProfileImg {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.subProfileContainer {
+    min-width: 100%;
+}
+
 .profileTextContainer {
-    max-width: 40%;
+    width: 90%;
     margin: auto;
 }
 
@@ -167,6 +179,8 @@ p {
 #footer {
     background-color: #2a4081;
     padding: 2rem;
+    box-shadow: 0rem 0rem 1rem 0.5rem rgba(14, 14, 14, 0.45);
+    position: relative;
 }
 
 .f-icon {
@@ -238,7 +252,7 @@ body .animateLink {
     line-height: 1.15em;
     text-decoration: none;
     transition: background-position 0.25s ease-out;
-    border-radius: 20rem;
+    border-radius: 0.5rem;
 }
 
 body .animateLink:hover {
@@ -253,16 +267,16 @@ body .animateLink:hover {
     padding: 2rem;
     border-radius: 3rem;
     box-shadow: 0.75rem 0.75rem 0.75rem 0.75rem rgba(0, 0, 0, 0.45);
-    width: 80%;
-    margin: 5rem auto;
+    width: 75%;
+    margin: 0 auto 4rem;
 }
 
 .card-bg-white {
     background-color: #FFFFFF;
-    padding: 4rem;
+    padding: 2rem 5rem;
     border-radius: 3rem;
     box-shadow: 0.75rem 0.75rem 0.75rem 0.75rem rgba(0, 0, 0, 0.45);
-    width: 80%;
+    width: 75%;
     margin: 0 auto 4rem;
 }
 
@@ -380,20 +394,21 @@ body .animateLink:hover {
 }
 
 .project-title-photo {
-    width: 700px;
+    width: 90%;
+    border-radius: 2rem;
+    border: 20px solid #2a4081;
+}
+
+.project-photo {
+    width: 80%;
     border-radius: 2rem;
     border: 20px solid #2a4081;
 }
 
 .project-photo-vertical {
-    height: 500px;
+    width: 60%;
     border-radius: 2rem;
     border: 20px solid #2a4081;
-}
-
-
-.project-title-container {
-    min-width: 80%;
 }
 
 .project-text-title {
@@ -406,8 +421,84 @@ body .animateLink:hover {
     text-align: left;
 }
 
-.project-photo {
-    width: 600px;
-    border-radius: 2rem;
-    border: 20px solid #2a4081;
+.title-design-container {
+    padding-top: 7rem;
+}
+
+.title-design-container-extend {
+    min-width: 80%;
+}
+
+.title-design-image {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
+    position: relative;
+    left: 5rem;
+}
+
+.title-design-image-right {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
+    position: relative;
+    right: 7rem;
+}
+
+.title-design-image-mirror {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
+    position: relative;
+    right: 11rem;
+    transform: scaleX(-1);
+}
+
+.design-title {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.job-title {
+    color: #3c5bc0;
+    font-weight: bold;
+}
+
+.skill-categories {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.skill-page {
+    width: 60%;
+}
+
+.skill-page li {
+    font-size: 1.1rem;
+}
+
+.skill-page p, .skill-page a {
+    font-size: 1.3rem;
+}
+
+li .skill-link {
+    font-size: 1.1rem;
+}
+
+.contact-page h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.contact-page li {
+    font-size: 1.3rem;
+}
+
+.contact-page i {
+    font-size: 2rem;
+    margin: 0;
 }

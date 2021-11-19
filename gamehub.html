@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Ryan Lemon's Plantcare App</title>
+        <title>Ryan Lemon's Gamehub Site</title>
 
         <!-- Style Sheets-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -60,10 +60,10 @@
         <div class="container title-design-container title-design-container-extend">
             <div class="row">
                 <div class="col-lg-2 my-auto">
-                    <img class="title-design-image" src="https://raw.githubusercontent.com/rlemon17/plantApp/main/public/Plant.gif">
+                    <img class="title-design-image" src="images/CS Gif.gif">
                 </div>
                 <div class="col-lg-10 my-auto">
-                    <h1 class="titleText design-title">Plant Care Web Application</h1>
+                    <h1 class="titleText design-title">Gamehub Web Application</h1>
                 </div>
             </div>
         </div>
@@ -73,60 +73,45 @@
                 <div class="row skillRow fade-in">
                     <div class="col-lg-4 my-auto project-text-container">
                         <h1 class="project-text-title">Overview</h1>
-                        <p>Web application to help users keep track of watering/fertilizing their plants by calculating upcoming dates with given information.</p>
-                        <p><strong>Link: </strong><a class="link animateLink" href="https://lemon-plantcare.herokuapp.com/">https://lemon-plantcare.herokuapp.com/</a></p>
-                        <p><strong>Test Username: </strong>sampleUser</p>
-                        <p><strong>Test Password: </strong>samplePassword</p>
-                        <p><strong>Features: </strong>React, HTML, CSS, Bootstrap, JavaScript/Node.js, Express, CRUD and REST API (Axios), MongoDB, Mongoose, Authentication, Password hashing, Cookies</p>
+                        <p>Database site for users to obtain live information and resources for various games.</p>
+                        <p><strong>Link: </strong><a class="link animateLink" href="https://lemon-gamehub.herokuapp.com/">https://lemon-gamehub.herokuapp.com/</a></p>
+                        <p><strong>Features: </strong>EJS, HTML, CSS, Bootstrap, JavaScript/Node.js, Express, API/HTTPS requests</p>
                     </div>
                     <div class="col-lg-8 my-auto">
-                        <img class="project-title-photo" src="images/plantAppHome.png">
+                        <img class="project-title-photo" src="images/gamehubPreview.png">
                     </div>
                 </div>
 
                 <div class="row skillRow fade-in">
                     <div class="col-lg-7 my-auto">
-                        <img class="project-photo" src="images/plantAppLogin.png">
+                        <img class="project-photo" src="images/gamehubLive.png">
                     </div>
                     <div class="col-lg-5 my-auto project-text-container">
-                        <h1 class="project-text-title">Authentication and Encryption</h1>
-                        <p>Users are required to register an account before being able to access any features (other than the help page). Attempting to access any unauthorized links prompts the user to log in.</p>
-                        <p>Accounts and passwords are stored in a MongoDB database, and passwords are encrypted through a cryptographic hash function.</p>
-                        <p>Users will stay logged into their accounts unless they log out or delete their browser's cookies.</p>
+                        <h1 class="project-text-title">Requests to Official Video Game APIs</h1>
+                        <p>Some resources on the site display information calculated from data directly pulled from official APIs, such as live stock market prices from <em>Runescape</em> to determine the effectiveness of money-making methods.</p>
                     </div>
                 </div>
 
                 <div class="row skillRow fade-in">
                     <div class="col-lg-5 my-auto project-text-container">
-                        <h1 class="project-text-title">Unique URL and Account Management</h1>
-                        <p>Other than logging in, users are also able to access their plant database by appending their username to the URL. The application will recognize the parameter and load the user's data (if authenticated).</p>
+                        <h1 class="project-text-title">API Requests based on User Input</h1>
+                        <p>Other resources base their requests on user input, such as inputting a name or Pokedex number from <em>Pokemon</em> to bring up its sprite, dialogue, and stats.</p>
                     </div>
                     <div class="col-lg-7 my-auto">
-                        <img class="project-photo" src="https://raw.githubusercontent.com/rlemon17/plantApp/main/public/photos/url.png">
+                        <img class="project-photo" src="images/gamehubPoke.png">
                     </div>
                 </div>
 
                 <div class="row skillRow fade-in">
                     <div class="col-lg-7 my-auto">
-                        <img class="project-photo" src="https://raw.githubusercontent.com/rlemon17/plantApp/main/public/photos/plantEdit.png">
+                        <img class="project-photo" src="images/gamehubCallouts.png">
                     </div>
                     <div class="col-lg-5 my-auto project-text-container">
-                        <h1 class="project-text-title">Adding, Editing, and Deleting</h1>
-                        <p>Adding or editing a plant presents the same UI, and the application performs the required CRUD operations on the back-end database once the user provides the requested data.</p>
-                        <p>Cancel, Delete, and Undo Delete functionalities are also present.</p>
+                        <h1 class="project-text-title">Self-Made Databases</h1>
+                        <p>Other resources on the site were compiled and built from scratch by me, such as a picture quiz that helps the users study map locations from the game <em>Valorant</em>.</p>
                     </div>
                 </div>
 
-                <div class="row skillRow fade-in">
-                    <div class="col-lg-5 my-auto project-text-container">
-                        <h1 class="project-text-title">Interface</h1>
-                        <p>The website provides a clean UI to view the user's plants, displaying watering and fertilizing dates. A plant's background turns green when the watering date has been reached. Plants are also sorted by next watering date.</p>
-                        <p>All information is stored and retrieved from a MongoDB Database.</p>
-                    </div>
-                    <div class="col-lg-7 my-auto">
-                        <img class="project-photo" src="https://raw.githubusercontent.com/rlemon17/plantApp/main/public/photos/plantHome.png">
-                    </div>
-                </div>
             </div> 
         </div>
         <script src="script.js"></script>
