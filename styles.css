@@ -186,6 +186,8 @@ p {
 .f-icon {
     margin: 1rem;
     padding: 1rem;
+    width: 6rem;
+    height: 5rem;
     font-size: 3rem;
     color: #addaff;
 }
@@ -252,7 +254,7 @@ body .animateLink {
     line-height: 1.15em;
     text-decoration: none;
     transition: background-position 0.25s ease-out;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
 }
 
 body .animateLink:hover {
@@ -283,7 +285,7 @@ body .animateLink:hover {
 .card-bg-white p {
     color: #393E46;
     font-size: 1.1rem;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .card-A {
@@ -310,7 +312,7 @@ body .animateLink:hover {
 }
 
 .card-A .post:hover .body_post {
-    height: 25%;
+    height: 50%;
 }
 
 .card-A .post:hover img {
@@ -338,7 +340,7 @@ body .animateLink:hover {
 
 .card-A .post .body_post {
     width: 100%;
-    height: 50%;
+    height: 25%;
     background: #FFFFFF;
     position: absolute;
     bottom: 0;
@@ -467,6 +469,13 @@ body .animateLink:hover {
     font-weight: bold;
 }
 
+.anchor-offset {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
 .skill-categories {
     width: 100%;
     margin-bottom: 4rem;
@@ -501,4 +510,10 @@ li .skill-link {
 .contact-page i {
     font-size: 1.7rem;
     margin: 0;
+    height: 4rem;
+    width: 4rem;
+}
+
+.contact-icon-container {
+    text-align: center;
 }
