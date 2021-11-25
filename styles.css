@@ -144,6 +144,10 @@ strong {
     color: #68bbff;
 }
 
+.projectTitle .link {
+    color: #addaff;
+}
+
 /* ===== Skills Section ===== */
 #skills {
     position: relative;
@@ -546,8 +550,8 @@ li .skill-link {
     }
 }
 
-/* Adaptive for below 1400px */
-@media only screen and (max-width: 1450px) {
+/* Adaptive for below 1550px */
+@media only screen and (max-width: 1550px) {
     .title-design-container-extend {
         min-width: 100%;
     }    
